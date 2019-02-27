@@ -19,17 +19,17 @@ ConnectDatabase::~ConnectDatabase()
 bool ConnectDatabase::openDatabase()
 {
 
-    db.setHostName("mysql-wms.mysql.database.azure.com");
-    db.setDatabaseName("wms");
-    db.setUserName("summer@mysql-wms");
-    db.setPassword("zx199461!");
-    db.setPort(3306);
-
-//    db.setHostName("localhost");
+//    db.setHostName("mysql-wms.mysql.database.azure.com");
 //    db.setDatabaseName("wms");
-//    db.setUserName("root");
-//    db.setPassword("199461");
+//    db.setUserName("summer@mysql-wms");
+//    db.setPassword("zx199461!");
 //    db.setPort(3306);
+
+    db.setHostName("localhost");
+    db.setDatabaseName("wms");
+    db.setUserName("root");
+    db.setPassword("199461");
+    db.setPort(3306);
 
 
     if (!db.open())
